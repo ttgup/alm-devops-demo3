@@ -1,3 +1,7 @@
+
+
+
+
 name: Java Maven CI
 
 on:
@@ -31,3 +35,11 @@ jobs:
 
       - name: Build and test with Maven
         run: mvn clean package
+
+
+- name: Upload JAR
+  uses: actions/upload-artifact@v4
+  with:
+    name: alm-java-demo
+    path: java-demo/target/*.jar 
+
