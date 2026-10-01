@@ -11,7 +11,9 @@ public class AppTest {
 
     @Test
     public void testMessage() {
+
 assertEquals("Hello from CI Practice!", App.message());
+
     }
 }
 
